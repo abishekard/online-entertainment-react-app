@@ -5,6 +5,7 @@ import ParentPlayerContainer from "../ui/ParentPlayerContainer";
 import VideoHome from "../Video/VideoHome";
 import LoginContext from "../store/LoginContex";
 import LoginSignUp from "../loginAndSignUp/LoginSignUp";
+import AudioHome from "../audio/AudioHome";
 
 const Home = () => {
   const loginContext = useContext(LoginContext);
@@ -21,7 +22,9 @@ const Home = () => {
         <VideoHome />
       </Route>
 
-      <Route path="/home/audio">audio</Route>
+      <Route path="/home/audio">
+        <AudioHome />
+      </Route>
       <Route path="/home/wallpaper">wallpaper</Route>
     </>
   );
