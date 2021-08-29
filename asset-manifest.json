@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/online-entertainment-react-app/static/css/main.bb06bf29.chunk.css",
-    "main.js": "/online-entertainment-react-app/static/js/main.d60815ae.chunk.js",
-    "main.js.map": "/online-entertainment-react-app/static/js/main.d60815ae.chunk.js.map",
+    "main.js": "/online-entertainment-react-app/static/js/main.4564de38.chunk.js",
+    "main.js.map": "/online-entertainment-react-app/static/js/main.4564de38.chunk.js.map",
     "runtime-main.js": "/online-entertainment-react-app/static/js/runtime-main.3b630d6c.js",
     "runtime-main.js.map": "/online-entertainment-react-app/static/js/runtime-main.3b630d6c.js.map",
-    "static/js/2.9df063d1.chunk.js": "/online-entertainment-react-app/static/js/2.9df063d1.chunk.js",
-    "static/js/2.9df063d1.chunk.js.map": "/online-entertainment-react-app/static/js/2.9df063d1.chunk.js.map",
+    "static/js/2.a301ca38.chunk.js": "/online-entertainment-react-app/static/js/2.a301ca38.chunk.js",
+    "static/js/2.a301ca38.chunk.js.map": "/online-entertainment-react-app/static/js/2.a301ca38.chunk.js.map",
     "index.html": "/online-entertainment-react-app/index.html",
     "static/css/main.bb06bf29.chunk.css.map": "/online-entertainment-react-app/static/css/main.bb06bf29.chunk.css.map",
-    "static/js/2.9df063d1.chunk.js.LICENSE.txt": "/online-entertainment-react-app/static/js/2.9df063d1.chunk.js.LICENSE.txt",
+    "static/js/2.a301ca38.chunk.js.LICENSE.txt": "/online-entertainment-react-app/static/js/2.a301ca38.chunk.js.LICENSE.txt",
     "static/media/SignUp.module.css": "/online-entertainment-react-app/static/media/login-back.fb0e353a.jpg",
     "static/media/view.c19b9e35.png": "/online-entertainment-react-app/static/media/view.c19b9e35.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3b630d6c.js",
-    "static/js/2.9df063d1.chunk.js",
+    "static/js/2.a301ca38.chunk.js",
     "static/css/main.bb06bf29.chunk.css",
-    "static/js/main.d60815ae.chunk.js"
+    "static/js/main.4564de38.chunk.js"
   ]
 }
