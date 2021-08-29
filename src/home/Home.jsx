@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       <NavigationBar />
-      {/*   {!loginContext.isLogin && <Redirect to="/login_signin" />}
-      {loginContext.isLogin && <Redirect to="/home/video" />} */}
+      {!loginContext.isLogin && <Redirect to="/login_signin" />}
+      {loginContext.isLogin && <Redirect to="/home/video" />}
       <Route path="/home/profile">
         <ProfileHome />
       </Route>
