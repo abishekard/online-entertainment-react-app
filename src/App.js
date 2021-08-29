@@ -10,6 +10,9 @@ function App() {
     <LoginContexProvider>
       <Router>
         <Switch>
+          <Route path="/login_signin">
+            <LoginSignUp />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

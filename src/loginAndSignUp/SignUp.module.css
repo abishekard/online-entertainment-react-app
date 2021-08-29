@@ -1,8 +1,8 @@
 .container {
     background-image: url("../images/login/login-back.jpg");
-    background-size: 100% 100vh;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,13 +12,12 @@
     background: rgba(0, 0, 0, 0.5);
     width: 400px;
     min-width: 200px;
-    height: 70%;
     min-height: 450px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    margin-top: 500px;
-    margin-bottom: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     box-shadow: 0 4px 8px 0 (0, 0, 0, 0.2);
 }
 
@@ -74,6 +73,7 @@
 .signup-forgot {
     margin-top: 20px;
     color: white;
+    margin-bottom: 30px;
 }
 
 .signup-forgot h5:hover {
