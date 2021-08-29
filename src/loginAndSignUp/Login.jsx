@@ -34,13 +34,15 @@ const Login = (props) => {
         const starCountRef = ref(db, "users/" + user.uid);
         onValue(starCountRef, (snapshot) => {
           const data = snapshot.val();
-          loginContext.name = data.userName;
-          loginContext.email = data.email;
-          loginContext.mobile = data.mob;
-          loginContext.profileImage = data.image;
-          loginContext.userId = user.uid;
-          loginContext.date = data.date;
-          loginContext.setLogin(true);
+
+          loginContext.setLogin({
+            name: data.userName,
+            email: data.email,
+            mobile: data.mob,
+            profileImage: data.image,
+            userId: user.uid,
+            date: data.date,
+          });
 
           history.push("/home");
 
@@ -49,7 +51,7 @@ const Login = (props) => {
           console.log(data.mob);
           console.log(data.image);
           console.log(data.date);
-          console.log(loginContext.name);
+          console.log("name --- " + loginContext.name);
         });
       })
       .catch((error) => {

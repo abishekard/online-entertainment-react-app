@@ -19,10 +19,14 @@
     border-radius: 10px;
     margin-top: 500px;
     margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 (0, 0, 0, 0.2);
 }
 
-.form-container h1 {
+.form-container h2 {
     color: white;
     margin-top: 10px;
 }
@@ -31,7 +35,8 @@
     margin-top: 10%;
 }
 
-.form-container form input {
+.form-container .data_container p {
+    min-width: 300px;
     height: 40px;
     border-radius: 10px;
     outline: none;
@@ -43,40 +48,14 @@
     margin-top: 20px;
 }
 
-.form-container form button {
-    width: 73%;
-    height: 40px;
-    outline: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    border: none;
-    background: rgb(65, 210, 235);
+.form-container .data_container {
     margin-top: 40px;
-    font-size: 20px;
-    font-weight: bold;
 }
 
-.form-container form button:hover {
-    width: 73%;
-    height: 40px;
-    outline: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-    border: 1px solid white;
-    background: rgb(6, 141, 112);
-    margin-top: 40px;
-    color: white;
-    cursor: pointer;
-}
-
-.signup-forgot {
-    margin-top: 20px;
-    color: white;
-}
-
-.signup-forgot h4:hover {
-    color: green;
-    cursor: pointer;
+.form-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 30px;
 }

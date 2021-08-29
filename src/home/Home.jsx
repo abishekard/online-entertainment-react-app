@@ -6,6 +6,7 @@ import VideoHome from "../Video/VideoHome";
 import LoginContext from "../store/LoginContex";
 import LoginSignUp from "../loginAndSignUp/LoginSignUp";
 import AudioHome from "../audio/AudioHome";
+import ProfileHome from "../profile/ProfileHome";
 
 const Home = () => {
   const loginContext = useContext(LoginContext);
@@ -16,7 +17,9 @@ const Home = () => {
       <NavigationBar />
       {!loginContext.isLogin && <Redirect to="/login_signin" />}
       {loginContext.isLogin && <Redirect to="/home/video" />}
-      <Route path="/home/profile">profile</Route>
+      <Route path="/home/profile">
+        <ProfileHome />
+      </Route>
 
       <Route path="/home/video">
         <VideoHome />
