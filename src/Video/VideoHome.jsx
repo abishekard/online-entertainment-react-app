@@ -53,9 +53,9 @@ const VideoHome = () => {
     const postData = {
       views: parseInt(views) + 1,
     };
-    let updates = {};
+    /*  let updates = {};
     updates["/videos/" + key] = postData;
-    update(ref(db), updates);
+    update(ref(db), updates); */
 
     setCurrentVideo(videoList[position]);
   };
