@@ -36,7 +36,7 @@ const NavigationBar = () => {
           fontWeight: "bold",
           color: "white",
         }}
-        to="/home/wallpapers"
+        to="/home/wallpaper"
       >
         <h5>Wallpapers</h5>
       </NavLink>

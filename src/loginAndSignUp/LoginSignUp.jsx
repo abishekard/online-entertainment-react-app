@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Header from "../ui/Header";
+import ForgotPassword from "./ForgotPassword";
 import Login from "./Login";
 import SignUp from "./SignUp";
 
@@ -10,10 +11,15 @@ function LoginSignUp() {
 
   const signInClickHandler = () => {
     setLoginClick(false);
+    setForgotPass(false);
   };
-  const forgotPassClickHandler = () => {};
+  const forgotPassClickHandler = () => {
+    setForgotPass(true);
+    setLoginClick(false);
+  };
   const loginClickHandler = () => {
     setLoginClick(true);
+    setForgotPass(false);
   };
 
   return (
@@ -24,18 +30,19 @@ function LoginSignUp() {
         </h2>
       </Header>
 
-      {!loginClick && (
+      {!forgotPass && !loginClick && (
         <SignUp
           onLoginClick={loginClickHandler}
           onForgotPassClick={forgotPassClickHandler}
         />
       )}
-      {loginClick && (
+      {!forgotPass && loginClick && (
         <Login
           onSignInClick={signInClickHandler}
           onForgotPassClick={forgotPassClickHandler}
         />
       )}
+      {forgotPass && <ForgotPassword onSignInClick={signInClickHandler} />}
     </div>
   );
 }

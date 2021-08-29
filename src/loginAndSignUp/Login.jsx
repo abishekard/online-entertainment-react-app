@@ -92,7 +92,7 @@ const Login = (props) => {
         </form>
         <div className={classes["signup-forgot"]}>
           <h5 onClick={props.onSignInClick}>Create Account</h5>
-          <h5>Forgot Password</h5>
+          <h5 onClick={props.onForgotPassClick}>Forgot Password</h5>
         </div>
       </div>
     </div>

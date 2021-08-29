@@ -7,6 +7,7 @@ import LoginContext from "../store/LoginContex";
 import LoginSignUp from "../loginAndSignUp/LoginSignUp";
 import AudioHome from "../audio/AudioHome";
 import ProfileHome from "../profile/ProfileHome";
+import WallpaperHome from "../wallpapers/WallpaperHome";
 
 const Home = () => {
   const loginContext = useContext(LoginContext);
@@ -15,8 +16,8 @@ const Home = () => {
   return (
     <>
       <NavigationBar />
-      {!loginContext.isLogin && <Redirect to="/login_signin" />}
-      {loginContext.isLogin && <Redirect to="/home/video" />}
+      {/*   {!loginContext.isLogin && <Redirect to="/login_signin" />}
+      {loginContext.isLogin && <Redirect to="/home/video" />} */}
       <Route path="/home/profile">
         <ProfileHome />
       </Route>
@@ -28,7 +29,9 @@ const Home = () => {
       <Route path="/home/audio">
         <AudioHome />
       </Route>
-      <Route path="/home/wallpaper">wallpaper</Route>
+      <Route path="/home/wallpaper">
+        <WallpaperHome />
+      </Route>
     </>
   );
 };
