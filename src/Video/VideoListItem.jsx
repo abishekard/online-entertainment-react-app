@@ -13,7 +13,7 @@ const VideoListItem = (props) => {
       <img height="70px" width="120px" src={props.data.thumb_url} />
       <div>
         <div className={classes.title}>
-          <span>title : </span>
+          {/*  <span>title : </span> */}
           <span>{props.data.video_title}</span>
         </div>
         <div className={classes.description}>
